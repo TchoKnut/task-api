@@ -1,0 +1,18 @@
+meta {
+  name: Create With Desc
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/tasks
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Wäsche machen",
+    "description": "Heute noch"
+  }
+}
