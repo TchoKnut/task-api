@@ -35,7 +35,7 @@ jobs:
         run: npm run check
 
       - name: Run Unit Tests
-        run: npm run test
+        run: npm run test:coverage
 
       - name: Run Sonar Qube
         uses: SonarSource/sonarqube-scan-action@v4
