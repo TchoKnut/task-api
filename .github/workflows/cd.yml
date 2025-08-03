@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-  # TODO: Remove when finsished testing
-  pull_request:
-    branches:
-      - main
 
 jobs:
   deploy:
