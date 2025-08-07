@@ -2,7 +2,9 @@ import { TaskRepository } from "@/repositories/taskRepository";
 import { Task } from "@/models/Task";
 
 export class TaskService {
-  constructor(private readonly repository: TaskRepository = new TaskRepository()) {}
+  constructor(
+    private readonly repository: TaskRepository = new TaskRepository(),
+  ) {}
 
   getTasks(): Promise<Task[]> {
     return this.repository.getAllTasks();
