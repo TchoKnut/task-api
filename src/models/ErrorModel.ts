@@ -1,6 +1,6 @@
 export class ErrorModel {
-  private code: number;
-  private message: string;
+  private readonly code: number;
+  private readonly message: string;
 
   constructor(code: number, message: string) {
     this.code = code;
